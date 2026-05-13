@@ -80,6 +80,10 @@ class Gatekeeper:
             # Quad3D: 12 states, 4 controls
             self.n_states = 12
             self.n_controls = 4
+        elif model in ['KinematicBicycleVel2D']:
+            # Velocity-controlled kinematic bicycle: [x, y, theta] (3 states), [V, delta] (2 controls)
+            self.n_states = 3
+            self.n_controls = 2
         else:
             # Default: Drifting car model
             # State: [x, y, theta, r, beta, V, delta, tau] (8 states)

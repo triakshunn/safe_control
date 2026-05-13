@@ -1,0 +1,3 @@
+[submodule "safety-gymnasium"]
+	path = safety-gymnasium
+	url = https://github.com/triakshunn/safety-gymnasium.git
